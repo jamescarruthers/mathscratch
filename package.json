@@ -1,12 +1,12 @@
 {
-  "name": "math-scratchpad",
+  "name": "mathscratchpad",
   "displayName": "Math Scratchpad",
   "description": "Real-time mathematical expression evaluation with inline results and auto-completion",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "JamesCarruthers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/math-scratchpad"
+    "url": "https://github.com/jamescarruthers/mathscratchpad"
   },
   "license": "MIT",
   "engines": {
