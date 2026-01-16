@@ -1,0 +1,65 @@
+{
+  "name": "math-scratchpad",
+  "displayName": "Math Scratchpad",
+  "description": "Real-time mathematical expression evaluation with inline results and auto-completion",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/math-scratchpad"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "keywords": [
+    "math",
+    "calculator",
+    "scratchpad",
+    "evaluate",
+    "expression"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Math Scratchpad",
+      "properties": {
+        "mathScratchpad.alignColumn": {
+          "type": "number",
+          "default": 80,
+          "description": "The minimum column number to align results to on the right."
+        },
+        "mathScratchpad.padding": {
+          "type": "number",
+          "default": 10,
+          "description": "The minimum padding between the longest line and the results."
+        },
+        "mathScratchpad.showResults": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show calculated results at the end of each line."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.57.0",
+    "@vscode/vsce": "^2.22.0"
+  },
+  "dependencies": {
+    "mathjs": "^12.4.0"
+  }
+}
