@@ -1,4 +1,4 @@
-# Math Scratchpad
+# Mathscratchpad
 
 A VS Code extension that transforms any file into a real-time mathematical scratchpad with inline results and auto-completion.
 
